@@ -1,5 +1,5 @@
 FROM ghcr.io/gem5/ubuntu-22.04_all-dependencies:v23-0
-LABEL creator="mainpower4309@gmail.com"
+LABEL creator="sangjae4309@gmail.com"
 LABEL version="1.0.0"
 
 #ARG DEBIAN_FRONTEND=noninteractive
