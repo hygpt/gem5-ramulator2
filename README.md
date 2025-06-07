@@ -1,10 +1,7 @@
 # Integrating gem5 + Ramulator2
 
 ## Introduction
-This repository distributes a enviorment that integrates gem5 and ramulator2.
-
-The The repository contains following contents and files. The detailed process of integrating can be seen on [How to integerate Ramulator2 to gem5](https://sangjae4309.github.io/docs-gem5/external_simulator/ramulator2).
-
+This repository distributes a enviorment that integrates gem5 and ramulator2. This contains following contents and files.
 - `wrapper/`: contains wrapper files to integarte ramultor2 
 - `example/`: example ramulator2's config file and binary file to test.
 - `script/`: contains scripts utilizing gem5 standard library.
