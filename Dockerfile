@@ -1,6 +1,6 @@
 FROM ghcr.io/gem5/ubuntu-22.04_all-dependencies:v23-0
 LABEL creator="sangjae4309@gmail.com"
-LABEL version="1.0.0"
+LABEL version="1.0.1"
 
 #ARG DEBIAN_FRONTEND=noninteractive
 #ENV TZ=America/New_York
@@ -22,7 +22,8 @@ RUN git clone https://github.com/gem5/gem5.git /root/gem5-ramulator2/gem5
 RUN cd /root/gem5-ramulator2/gem5 && git reset --hard 48a40cf2f5182a82de360b7efa497d82e06b1631
 RUN mkdir /root/gem5-ramulator2/gem5/ext/ramulator2 
 RUN git clone https://github.com/CMU-SAFARI/ramulator2.git /root/gem5-ramulator2/gem5/ext/ramulator2/ramulator2
-RUN cd /root/gem5-ramulator2/gem5/ext/ramulator2/ramulator2 && git reset --hard 0eafaa4c3df7b333f8645f1249afa52390c89616
+#RUN cd /root/gem5-ramulator2/gem5/ext/ramulator2/ramulator2 && git reset --hard 0eafaa4c3df7b333f8645f1249afa52390c89616
+RUN cd /root/gem5-ramulator2/gem5/ext/ramulator2/ramulator2 && git reset --hard e442c64b2c0db7afd9d23173925d636ea2895a36
 
 
 RUN chmod -R 755 /root/gem5-ramulator2/wrapper/mem/*
