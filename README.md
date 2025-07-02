@@ -9,7 +9,7 @@ This repository distributes a enviorment that integrates gem5 and ramulator2. Th
 ## Getting started (Compile)
 Clone the repository (don't need to include `--recursive`)
 ```
-git clone https://github.com/sangjae4309/gem5-ramulator2.git
+git clone https://github.com/hygpt/gem5-ramulator2.git
 ```
 
 First, you need base image provided from [gem5 official](https://www.gem5.org/documentation/general_docs/building). This repo uses ubuntu22.04.
