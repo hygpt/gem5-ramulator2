@@ -1,6 +1,6 @@
 FROM ghcr.io/gem5/ubuntu-22.04_all-dependencies:v23-0
 LABEL creator="sangjae4309@gmail.com"
-LABEL version="1.0.1"
+LABEL version="1.0.2"
 
 #ARG DEBIAN_FRONTEND=noninteractive
 #ENV TZ=America/New_York
@@ -9,6 +9,9 @@ LABEL version="1.0.1"
 
 USER root
 WORKDIR /root
+
+# replace apt repo
+RUN sed -i 's|http://security.ubuntu.com/ubuntu|http://archive.ubuntu.com/ubuntu|g' /etc/apt/sources.list
 
 RUN apt-get update 
 RUN apt-get install build-essential -y
