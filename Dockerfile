@@ -1,6 +1,7 @@
 FROM ghcr.io/gem5/ubuntu-22.04_all-dependencies:v23-0
 LABEL creator="sangjae4309@gmail.com"
-LABEL version="1.0.2"
+LABEL author="yangs@korea.ac.kr"
+LABEL version="1.0.3"
 
 #ARG DEBIAN_FRONTEND=noninteractive
 #ENV TZ=America/New_York
@@ -20,7 +21,7 @@ RUN apt-get install c++-12 -y
 RUN apt-get install clang clang++-15 -y
 RUN apt-get install cmake -y
  
-RUN git clone https://github.com/sangjae4309/gem5-ramulator2.git /root/gem5-ramulator2
+RUN git clone https://github.com/hygpt/gem5-ramulator2.git /root/gem5-ramulator2
 RUN git clone https://github.com/gem5/gem5.git /root/gem5-ramulator2/gem5
 RUN cd /root/gem5-ramulator2/gem5 && git reset --hard 48a40cf2f5182a82de360b7efa497d82e06b1631
 RUN mkdir /root/gem5-ramulator2/gem5/ext/ramulator2 
